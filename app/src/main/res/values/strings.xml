@@ -17,4 +17,9 @@
     <string name="username">Username</string>
     <string name="nabeel_14682_iqra_edu_pk">nabeel.14682@iqra.edu.pk</string>
     <string name="email">Email</string>
+    <string name="homepage">HomePage</string>
+    <string name="top_deals">*Top Deals*</string>
+    <string name="top_sales">*Top Sales*</string>
+    <string name="category">*Category*</string>
+    <string name="welcome_username">Welcome Username</string>
 </resources>

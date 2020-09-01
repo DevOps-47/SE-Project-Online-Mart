@@ -8,6 +8,7 @@ android {
 
     defaultConfig {
         applicationId "pk.edu.iqra.onlinemart24_7"
+//        api level
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
