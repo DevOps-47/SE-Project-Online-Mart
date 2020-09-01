@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SignIn_EditText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="SignIn_SignUp_TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Signin_Signup_Color</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="SignIn_TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/SignIn_TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="SignUp_EditText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="SignUp_TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/SignUp_TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="btn_NotRegis_Regis">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/btn_NotRegis_Regis</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/btn_borderless</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="btn_SignIn_SignUp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/btn_SignIn_Up_text</item>
+        <item name="android:background">@color/btn_SignIn_Up_Background</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_margin">40dp</item>
+    </style>
+
+</resources>

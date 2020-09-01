@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">24/7 OnlineMart</string>
+    <string name="project_heading">24/7 Online Mart</string>
+    <string name="signin_heading">SignIn</string>
+    <string name="signup_heading">SignUp</string>
+    <string name="signin">SignIn</string>
+    <string name="not_registered_signup">Not Registered? SignUp!</string>
+    <string name="nabeel_14682_gmail_com">nabeel.14682@gmail.com</string>
+    <string name="already_registered_signin">Already Registered? SignIn!</string>
+    <string name="cnic">Cnic</string>
+    <string name="_42501">42501########</string>
+    <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="_0301">0301#######</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="nabeel14682">nabeel14682</string>
+    <string name="username">Username</string>
+    <string name="nabeel_14682_iqra_edu_pk">nabeel.14682@iqra.edu.pk</string>
+    <string name="email">Email</string>
+</resources>
