@@ -135,4 +135,10 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="Theme.MaterialButton" parent="AppTheme">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/btn_SignIn_Up_Background</item>
+    </style>
+
 </resources>
