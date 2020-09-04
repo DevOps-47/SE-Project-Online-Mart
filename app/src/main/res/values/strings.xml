@@ -24,4 +24,12 @@
     <string name="welcome_username">Welcome Username</string>
     <string name="about">About Us</string>
     <string name="about_dis">24/7 is an online super market which aims at saving users from the hassle of going out and buying every day necessities. The online store brings to you different categories such as electronics and phone accessories, breakfast and dairy, grocery and staples, beverages, health care and much more. You can choose from thousands of products. 24/7 is currently delivering to all the cities of Pakistan.</string>
+    <string name="pr_img">Item Image</string>
+    <string name="pr_name">Item Name</string>
+    <string name="pr_price">Price</string>
+    <string name="pr_qty">Quantity</string>
+    <string name="pr_subtot">Sub Total</string>
+    <string name="total">Total :</string>
+    <string name="amount">0</string>
+
 </resources>
