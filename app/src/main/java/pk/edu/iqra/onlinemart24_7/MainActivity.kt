@@ -57,6 +57,8 @@ class MainActivity : AppCompatActivity() {
 
 //                after signup intent to sign in form
                 val to_homepage = Intent(this, HomepageActivity::class.java)
+//                this helps us when we go back in our activity it exit from current activity(e.g: user signIn account) and also to clear back stack
+                to_homepage.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(to_homepage)
             }
 

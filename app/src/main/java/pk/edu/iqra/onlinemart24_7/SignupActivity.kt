@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignupActivity : AppCompatActivity() {
@@ -50,9 +51,15 @@ class SignupActivity : AppCompatActivity() {
                 //result, if isn't successful to create user account it return default activity with return message!
                 if(!it.isSuccessful) return@addOnCompleteListener
 
-//                    else if successful
-                Log.d("SignUp", "Successfully created account with uid: ${it.result?.user?.uid}")
+//                else if successful
+                Log.d("SignUpActivity", "Successfully created account with uid: ${it.result?.user?.uid}")
+
+
+//                save user information to firebase database - fun
+                SaveUserInfoToFirebaseDatabase()
+
                 showToast("Account Created Successfully!")
+                Log.d("SignUpActivity", "Successfully created an account and saved user info to firebase database - username :$usr, phone: $phn, cnic: $cnc")
 
 //                        after signup intent to sign in form
                 val intent = Intent(this, MainActivity::class.java)
@@ -70,4 +77,20 @@ class SignupActivity : AppCompatActivity() {
     }
 }
 
+//  fun SaveUserInfoToFirebaseDatabase
+    private fun SaveUserInfoToFirebaseDatabase() {
+
+    val uid = FirebaseAuth.getInstance().uid ?: ""
+    val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
+
+    val user = Users(uid, Utils.getText(ed_signup_username), Utils.getText(ed_signup_password), Utils.getText(ed_signup_cnic))
+
+    ref.setValue(user)
+        .addOnSuccessListener {
+            Log.d("SignUpActivity", "Successfully saved user info to firebase database - uid: $uid")
+        }
+//        .addOnFailureListener{
+//            Log.d("SignUpActivity", "Failed to saved user info to firebase database - uid: $uid")
+//        }
+}
 }

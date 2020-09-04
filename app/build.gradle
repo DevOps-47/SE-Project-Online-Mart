@@ -15,6 +15,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -32,13 +33,21 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // add the Firebase SDK for Google Analytics
     implementation 'com.google.firebase:firebase-analytics:17.5.0'
 //    add the Firebase Auth SDK - Android Kotlin
     implementation 'com.google.firebase:firebase-auth-ktx:19.3.2'
+
+//    firebsae storage sdk
+    implementation 'com.google.firebase:firebase-storage-ktx:19.2.0'
+
+//    firebase database sdk
+    implementation 'com.google.firebase:firebase-database-ktx:19.4.0'
+
+
 
 }
 

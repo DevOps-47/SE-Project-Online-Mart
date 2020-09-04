@@ -1,67 +1,382 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".HomepageActivity">
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity"
+    >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+<!--    for navigation menu start-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_gravity="start"
+        >
 
-        <TextView
-            android:id="@+id/txt_header_homepage"
-            android:textSize="24sp"
-            style="@style/txtView_Homepage"
-            android:text="@string/homepage"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_topdeals_homepage"
-            style="@style/txtView_Homepage"
-            android:text="@string/top_deals"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_header_homepage" />
+        <include
+            layout="@layout/main_navigation_drawer"/>
+    </LinearLayout>
+<!--    for navigation menu start-->
 
 
-        <TextView
-            android:id="@+id/txt_topsale_homepage"
-            android:text="@string/top_sales"
-            style="@style/txtView_Homepage"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_topdeals_homepage" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-        <TextView
-            android:id="@+id/txt_category_homepage"
-            style="@style/txtView_Homepage"
-            android:text="@string/category"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_topsale_homepage" />
-
-
-<!--        footer-->
-        <TextView
-            android:id="@+id/txt_footer_homepage"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
-            android:text="@string/welcome_username"
-            android:textColor="#03A9F4"
-            android:textSize="14sp"
-            android:layout_marginTop="535dp"
-            android:layout_marginBottom="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_category_homepage" />
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <!--        toolbar layout-->
+                <include
+                    layout="@layout/menu_toolbar"
+                    />
+
+            </LinearLayout>
+
+<!--            cateory container-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#96D3EF"
+                >
+
+                <TextView
+                    android:id="@+id/txt_topdeals_homepage"
+                    style="@style/txtView_Homepage"
+                    android:text="@string/top_deals"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_header_homepage" />
+
+            </LinearLayout>
+
+            <!--            for images top deals-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    style="@style/image_view_topdeals_homepage"
+                    />
+
+                <ImageView
+                    style="@style/image_view_topdeals_homepage"
+                    />
+
+                <ImageView
+                    style="@style/image_view_topdeals_homepage"
+                    />
+
+            </LinearLayout>
+
+            <!--            for images tags top deals-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/textView_topdeals_homepage"
+                    android:text="@string/pixel_4a"
+                    />
+
+                <TextView
+                    style="@style/textView_topdeals_homepage"
+                    android:text="@string/pixel_4a"
+                    />
+
+                <TextView
+                    style="@style/textView_topdeals_homepage"
+                    android:text="@string/pixel_4a"
+                    />
+
+            </LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#96D3EF"
+                >
+
+                <TextView
+                    android:id="@+id/txt_topsale_homepage"
+                    android:text="@string/top_sales"
+                    style="@style/txtView_Homepage"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_topdeals_homepage" />
+
+            </LinearLayout>
+
+            <!--            for images top deals-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    style="@style/image_view_topsales_homepage"
+                    />
+
+                <ImageView
+                    style="@style/image_view_topsales_homepage"
+                    />
+
+                <ImageView
+                    style="@style/image_view_topsales_homepage"
+                    />
+
+            </LinearLayout>
+
+            <!--            for images tags top deals-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/textView_topsales_homepage"
+                    android:text="@string/baseus_usb_cable"
+                    />
+
+                <TextView
+                    style="@style/textView_topsales_homepage"
+                    android:text="@string/baseus_usb_cable"
+                    />
+
+                <TextView
+                    style="@style/textView_topsales_homepage"
+                    android:text="@string/baseus_usb_cable"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#96D3EF"
+                >
+
+                <TextView
+                    android:id="@+id/txt_category_homepage"
+                    style="@style/txtView_Homepage"
+                    android:text="@string/category"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_topsale_homepage" />
+
+            </LinearLayout>
+
+            <!--here categories-->
+            <!--            only button images-->
+
+
+            <!--            categories first row-->
+            <LinearLayout
+                android:id="@+id/first_row_ctg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_health_ctg_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/health"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_apparel_ctg_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/apparel_images"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_phn_acc_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/phone_accessories"
+                    />
+
+            </LinearLayout>
+
+            <!--            for btn tags first row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/textView_firstrow_homepage"
+                    android:text="@string/health"
+                    />
+
+                <TextView
+                    style="@style/textView_firstrow_homepage"
+                    android:text="@string/apparel"
+                    />
+
+                <TextView
+                    style="@style/textView_firstrow_homepage"
+                    android:text="@string/phone_accessories"
+                    />
+
+            </LinearLayout>
+
+            <!--            categories second row-->
+            <LinearLayout
+                android:id="@+id/second_row_ctg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_stationary_ctg_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/stationary_images"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_food_ctg_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/food_items"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_electronics_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/electronics_items"
+                    />
+
+            </LinearLayout>
+
+            <!--            for btn tags Second row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/textView_secondrow_homepage"
+                    android:text="@string/stationary"
+                    />
+
+                <TextView
+                    style="@style/textView_secondrow_homepage"
+                    android:text="@string/food_items"
+                    />
+
+                <TextView
+                    style="@style/textView_secondrow_homepage"
+                    android:text="@string/electronics"
+                    />
+
+            </LinearLayout>
+
+            <!--            categories third row-->
+            <LinearLayout
+                android:id="@+id/third_row_ctg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_books_ctg_home"
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/books"
+                    />
+
+                <ImageView
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/coming_soon"
+                    />
+
+                <ImageView
+                    style="@style/btn_ctg_homepage"
+                    android:src="@drawable/coming_soon"
+                    />
+
+            </LinearLayout>
+
+            <!--            for btn tags third row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/textView_thirdrow_homepage"
+                    android:text="@string/books"
+                    />
+
+                <TextView
+                    style="@style/textView_thirdrow_homepage"
+                    android:text="@string/coming_soon"
+                    />
+
+                <TextView
+                    style="@style/textView_thirdrow_homepage"
+                    android:text="@string/coming_soon"
+                    />
+
+            </LinearLayout>
+
+            <!--        footer-->
+            <TextView
+                android:id="@+id/txt_footer_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/welcome_username"
+                android:textColor="#03A9F4"
+                android:textSize="14sp"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_category_homepage" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
