@@ -141,4 +141,12 @@
         <item name="colorControlHighlight">@color/btn_SignIn_Up_Background</item>
     </style>
 
+    <style name="btn_Logout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/btn_logout_text</item>
+        <item name="android:background">@color/btn_logout_Background</item>
+    </style>
+
 </resources>

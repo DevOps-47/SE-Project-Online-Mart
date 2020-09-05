@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/Main_Bg_Color"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_myevent"
@@ -25,45 +29,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="10dp"
+                tools:ignore="UselessParent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:weightSum="6">
+                    android:weightSum="6"
+                    tools:ignore="UselessParent">
 
                     <TextView
                         android:id="@+id/tv_image"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
-                        android:text="@string/pr_img"
+                        android:text="@string/txt_image_item_list"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"                        />
 
                     <TextView
                         android:id="@+id/tv_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.94"
-                        android:text="@string/pr_name"
+                        android:text="@string/txt_name_item_list"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="center"                        />
 
                     <TextView
                         android:id="@+id/tv_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
-                        android:text="@string/pr_price"
+                        android:text="@string/txt_price_item_list"
                         android:textAlignment="center"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"
-
                         android:textStyle="bold" />
 
                     <TextView
@@ -71,7 +78,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/pr_qty"
+                        android:text="@string/txt_quantity_item_list"
                         android:textAlignment="center"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"
@@ -81,9 +88,8 @@
                         android:id="@+id/tv_total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@+id/tv_qty"
                         android:layout_weight="1"
-                        android:text="@string/pr_subtot"
+                        android:text="@string/txt_sub_total_item_list"
                         android:textAlignment="center"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"

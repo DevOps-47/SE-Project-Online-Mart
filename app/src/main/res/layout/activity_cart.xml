@@ -1,7 +1,9 @@
-<RelativeLayout android:background="#e1e1e1"
+<RelativeLayout
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/Main_Bg_Color"
+    >
 
     <LinearLayout
         android:id="@+id/layout_total"
@@ -9,23 +11,27 @@
         android:layout_height="wrap_content"
         android:background="#2196f3"
         android:padding="5dp"
-        android:weightSum="2">
+        android:weightSum="2"
+        >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="end"
-            android:text="@string/total"
-            android:textSize="20dp"></TextView>
+            android:gravity="center"
+            android:text="@string/txt_total_cart"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/tv_total"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/amount"
-            android:textSize="20dp"></TextView>
+            android:text="@string/txt_amount_cart"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
     </LinearLayout>
 
 
@@ -45,13 +51,11 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         android:layout_marginStart="229dp"
-        android:layout_marginLeft="229dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
         android:layout_marginBottom="1dp"
-        android:text="Place Order"
+        android:text="@string/txt_Placeorder_cart"
         android:textColor="@android:color/white"
-        android:theme="@style/Theme.MaterialButton"></Button>
+        android:theme="@style/Theme.MaterialButton" />
 
     <Button
         android:id="@+id/btn_clearcart"
@@ -60,13 +64,11 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
         android:layout_marginEnd="229dp"
-        android:layout_marginRight="229dp"
         android:layout_marginBottom="0dp"
         android:backgroundTint="#FF0000"
-        android:text="Clear Cart"
+        android:text="@string/txt_clear_cart"
         android:textColor="@android:color/white"
-        android:theme="@style/Theme.MaterialButton"></Button>
+        android:theme="@style/Theme.MaterialButton" />
 
 </RelativeLayout>

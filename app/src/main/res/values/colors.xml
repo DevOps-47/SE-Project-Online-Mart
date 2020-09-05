@@ -9,4 +9,8 @@
     <color name="btn_NotRegis_Regis">#2196f3</color>
     <color name="btn_SignIn_Up_Background">#2196f3</color>
     <color name="btn_SignIn_Up_text">#fff</color>
+    <color name="btn_logout_text">#fff</color>
+    <color name="btn_logout_Background">#2196f3</color>
+    <color name="Main_Bg_Color">#EFF4FF</color>
+    <color name="menu_header_bg">#2d89ef</color>
 </resources>

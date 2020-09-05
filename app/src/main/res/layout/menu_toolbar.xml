@@ -15,11 +15,11 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_main_menu"/>
 
-    <TextView
-        android:id="@+id/txt_header_homepage"
-        style="@style/txtView_Homepage"
-        android:text="@string/home_page"
-        android:gravity="center"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/txt_header_homepage"-->
+<!--        style="@style/txtView_Homepage"-->
+<!--        android:text="@string/home_page"-->
+<!--        android:gravity="center"-->
+<!--        />-->
 
 </LinearLayout>
