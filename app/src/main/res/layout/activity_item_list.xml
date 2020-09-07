@@ -93,14 +93,25 @@
                         android:textAlignment="center"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="13sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
-                    <CheckBox
-                        android:id="@+id/chk_selectitem"
+<!--                    <CheckBox-->
+<!--                        android:id="@+id/chk_selectitem"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1.10"-->
+<!--                        android:clickable="false" />-->
+
+                    <TextView
+                        android:id="@+id/status_selectitem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1.10"
-                        android:clickable="false" />
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:text="@string/txtstatus_item_list"
+                        />
                 </LinearLayout>
 
             </LinearLayout>

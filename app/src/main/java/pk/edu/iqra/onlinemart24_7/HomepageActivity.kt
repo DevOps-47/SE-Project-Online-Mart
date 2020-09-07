@@ -8,6 +8,9 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.menu_header.*
 
 class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -15,7 +18,6 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     lateinit var drawerLayout:DrawerLayout
     lateinit var navigationView: NavigationView
     lateinit var toolbar: androidx.appcompat.widget.Toolbar
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -139,6 +141,17 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 showToast("Logout")
             }
         }
+
+        when(item.itemId){
+//            for the user logout
+            R.id.cat_Logout -> {
+                FirebaseAuth.getInstance().signOut()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                showToast("Logout Successfully")
+            }
+        }
+
         return true
     }
 }

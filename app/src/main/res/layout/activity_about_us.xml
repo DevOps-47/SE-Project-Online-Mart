@@ -27,17 +27,17 @@
         android:text="@string/txt_heading_about"
         android:textSize="24sp"
         android:textColor="#000"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
         android:background="#FFFFFF"
         android:focusableInTouchMode="false"
         android:fontFamily="sans-serif-condensed"

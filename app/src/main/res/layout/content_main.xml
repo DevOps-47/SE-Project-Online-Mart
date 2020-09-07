@@ -16,49 +16,59 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/Theme.AppCompat.Light">
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                >
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/homepage"
-                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                    android:textColor="#fff"
-                    android:textAlignment="center"
-                    />
+<!--&lt;!&ndash;            homepage heading&ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:text="@string/homepage"-->
+<!--                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:gravity="center"-->
+<!--                    />-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
         </androidx.appcompat.widget.Toolbar>
+
+<!--            homepage heading-->
+        <TextView
+            android:id="@+id/title_hompage"
+            style="@style/title_homepage_content"
+            android:textColor="#03A9F4"
+            android:background="#96D3EF"
+            android:text="@string/homepage"
+            />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
 <!--main content homepage-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
-
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center">-->
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                >-->
 
                 <!--category container-->
 
@@ -391,39 +401,11 @@
                 </LinearLayout>
 
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
         </ScrollView>
 
     </LinearLayout>
 
 
-</LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--</LinearLayout>-->

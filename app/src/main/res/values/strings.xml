@@ -17,7 +17,7 @@
     <string name="username">Username</string>
     <string name="nabeel_14682_iqra_edu_pk">nabeel.14682@iqra.edu.pk</string>
     <string name="email">Email</string>
-    <string name="homepage">HOMEPAGE</string>
+    <string name="homepage">HOME PAGE</string>
     <string name="top_deals">*Top Deals*</string>
     <string name="top_sales">*Top Sales*</string>
     <string name="category">*Category*</string>
@@ -68,4 +68,6 @@
     <string name="txt_ewallet_nav_menu">My E-Wallet</string>
     <string name="txt_about_us_nav_menu">About Us</string>
     <string name="btn_logout_nav_menu">Logout</string>
+    <string name="txtmenubar_menutoolbar">menubar</string>
+    <string name="txtstatus_item_list">Status</string>
 </resources>
