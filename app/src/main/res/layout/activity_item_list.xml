@@ -41,7 +41,7 @@
                     tools:ignore="UselessParent">
 
                     <TextView
-                        android:id="@+id/tv_image"
+                        android:id="@+id/tot_item"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
