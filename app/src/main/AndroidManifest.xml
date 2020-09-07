@@ -9,20 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".mywallet"></activity>
+        <activity android:name=".category" />
+        <!-- homepage -->
+        <activity
+            android:name=".HomepageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
 
-
-        <!--        homepage-->
-        <activity android:name=".HomepageActivity" android:theme="@style/AppTheme.NoActionBar">
-            <!--            After signin user main homepage until logout, session maintained no need to signin again-->
+            <!-- After signin user main homepage until logout, session maintained no need to signin again -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".aboutUs"/>
-        <activity android:name=".Cart"/>
-        <activity android:name=".ItemList"/>
+        <activity android:name=".aboutUs" />
+        <activity android:name=".Cart" />
+        <activity android:name=".ItemList" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
