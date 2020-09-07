@@ -70,4 +70,22 @@
     <string name="btn_logout_nav_menu">Logout</string>
     <string name="txtmenubar_menutoolbar">menubar</string>
     <string name="txtstatus_item_list">Status</string>
+    <string name="txte_wallet">E-WALLET</string>
+    <string name="txthome_contentdis_icon">Home</string>
+    <string name="txt_e_wallet_pts">0</string>
+    <string name="txt_remaining_pts">Total Remaining Coins</string>
+    <string name="txt_pts">pts</string>
+    <string name="txtcategories_cat_page">Categories</string>
+    <string name="txthealth_cont">Health</string>
+    <string name="txtapparel_catpage">Apparel</string>
+    <string name="txtstationary_catpage">Stationary</string>
+    <string name="txtfooditems_catpage">FoodItems</string>
+    <string name="txtbooks_catpage">Books</string>
+    <string name="txtelectronics_catpage">Electronics</string>
+    <string name="txtcheckout_chkout">CHECKOUT</string>
+    <string name="txttotal_items_chkout">Total Items</string>
+    <string name="txttotal_amount_chkout">Total Amount</string>
+    <string name="txtdel_dates_chkout">Delivery Dates</string>
+    <string name="txtpay_meth_chkout">Payment Method</string>
+    <string name="txtorder_chkout">Order</string>
 </resources>

@@ -91,14 +91,17 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when(item.itemId){
 
             R.id.Cat_items -> {
+//                sub categories
+//                val intent = Intent(this, category::class.java)
+//                startActivity(intent)
                 showToast("Categories")
             }
         }
 
         when(item.itemId){
             R.id.cat_cart -> {
-                val intent = Intent(this, Cart::class.java)
-                startActivity(intent)
+//                val intent = Intent(this, Cart::class.java)
+//                startActivity(intent)
                 showToast("My Cart")
             }
         }
@@ -106,8 +109,8 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when(item.itemId){
 
             R.id.cat_order -> {
-                val intent = Intent(this, ItemList::class.java)
-                startActivity(intent)
+//                val intent = Intent(this, ItemList::class.java)
+//                startActivity(intent)
                 showToast("Your Orders!")
             }
         }
@@ -122,6 +125,8 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when(item.itemId){
 
             R.id.cat_E_Wallet -> {
+//                val intent = Intent(this, mywallet::class.java)
+//                startActivity(intent)
                 showToast("My E-Wallet")
             }
         }
@@ -129,16 +134,9 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when(item.itemId){
 
             R.id.cat_About -> {
-                val intent = Intent(this, aboutUs::class.java)
-                startActivity(intent)
+//                val intent = Intent(this, aboutUs::class.java)
+//                startActivity(intent)
                 showToast("About Us")
-            }
-        }
-
-        when(item.itemId){
-
-            R.id.cat_Logout -> {
-                showToast("Logout")
             }
         }
 

@@ -65,9 +65,7 @@
             android:layout_height="228dp"
             android:layout_centerInParent="true"
             android:foreground="@drawable/pngitem_5074283"
-            android:contentDescription="@string/txt_pts"
-            tools:targetApi="m"
-            tools:ignore="UnusedAttribute" />
+            android:contentDescription="@string/txt_pts" />
 
         <TextView
             android:id="@+id/myImageViewText"

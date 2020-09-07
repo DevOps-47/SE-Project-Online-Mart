@@ -104,7 +104,6 @@
                         android:foreground="@drawable/apparel"
                         android:scaleType="fitXY"
                         android:src="@drawable/apparel_images"
-                        tools:ignore="UnusedAttribute"
                         android:contentDescription="@string/txtapparel_catpage" />
 
 
@@ -157,7 +156,6 @@
                         android:layout_weight="1.3"
                         android:foreground="@drawable/stationary"
                         android:src="@drawable/stationary_images"
-                        tools:ignore="UnusedAttribute"
                         android:contentDescription="@string/txtstationary_catpage" />
 
                     <ImageView
@@ -170,7 +168,6 @@
                         android:backgroundTint="#FFFFFF"
                         android:foreground="@drawable/groceries"
                         android:src="@drawable/food_items"
-                        tools:ignore="UnusedAttribute"
                         android:contentDescription="@string/txtfooditems_catpage" />
 
 
@@ -218,8 +215,7 @@
                         android:layout_weight="1.3"
                         android:foreground="@drawable/books"
                         android:src="@drawable/coming_soon"
-                        tools:ignore="UnusedAttribute"
-                        android:contentDescription="@string/txtbooks_catpage" />
+                        android:contentDescription="@string/txtbooks_catpage"/>
 
                     <ImageView
                         style="@style/btn_ctg_homepage"
@@ -228,8 +224,7 @@
                         android:layout_weight="1.3"
                         android:foreground="@drawable/electronics"
                         android:src="@drawable/coming_soon"
-                        android:contentDescription="@string/txtelectronics_catpage"
-                        tools:ignore="UnusedAttribute" />
+                        android:contentDescription="@string/txtelectronics_catpage" />
 
                 </LinearLayout>
 
