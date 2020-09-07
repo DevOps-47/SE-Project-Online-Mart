@@ -88,4 +88,5 @@
     <string name="txtdel_dates_chkout">Delivery Dates</string>
     <string name="txtpay_meth_chkout">Payment Method</string>
     <string name="txtorder_chkout">Order</string>
+    <string name="txtblank">blank</string>
 </resources>

@@ -12,11 +12,10 @@ class Cart : AppCompatActivity() {
 
 
 //        for add to cart
-//        btn_placeorder.setOnClickListener{
-//            val intent = Intent(this, checkout::class.java)
-//            startActivity(intent)
-//            showToast("opening add to cart page")
-//        }
-
+        btn_placeorder.setOnClickListener{
+            showToast("opening add to cart page")
+            val intent = Intent(this, checkout::class.java)
+            startActivity(intent)
+        }
     }
 }

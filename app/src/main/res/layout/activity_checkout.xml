@@ -39,8 +39,8 @@
 
                 <ImageButton
                     android:id="@+id/homebutton"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="0dp"
                     android:background="@color/menu_header_bg"

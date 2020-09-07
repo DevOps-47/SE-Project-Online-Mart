@@ -39,8 +39,8 @@
 
                 <ImageButton
                     android:id="@+id/homebutton"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:background="@color/menu_header_bg"
                     app:srcCompat="@mipmap/home_foreground"
@@ -56,7 +56,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -222,8 +222,7 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_weight="1.3"
-                        android:foreground="@drawable/electronics"
-                        android:src="@drawable/coming_soon"
+                        android:src="@drawable/electronics_category"
                         android:contentDescription="@string/txtelectronics_catpage" />
 
                 </LinearLayout>
