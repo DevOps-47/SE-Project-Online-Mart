@@ -89,4 +89,13 @@
     <string name="txtpay_meth_chkout">Payment Method</string>
     <string name="txtorder_chkout">Order</string>
     <string name="txtblank">blank</string>
+    <string name="txtacc_setting_acc_page">Account Setting</string>
+    <string name="txtedit_accset">Edit</string>
+    <string name="txtsave_accset">save</string>
+    <string name="hintaddress_accset">Gulistan e jauhar</string>
+    <string name="hintcountry_accset">Pakistan</string>
+    <string name="hintcity_accset">Karachi</string>
+    <string name="txtaddress_accset">Address</string>
+    <string name="txtcountry_accset">Country</string>
+    <string name="txtcity_accset">City</string>
 </resources>

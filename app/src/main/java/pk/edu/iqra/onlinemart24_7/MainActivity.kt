@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
 //to validate all the null fields in signin form and after signin Intent to homepage activity
 
         btnsignin.setOnClickListener{
-//          calling SingInAuth
+//          calling SignInAuth
             SignInAuth()
         }
-    }
 
+    }
 
 //    fun for SignIn Authentication using firebase Authentication
     private fun SignInAuth() {
@@ -55,11 +55,15 @@ class MainActivity : AppCompatActivity() {
                 Log.d("SignIn", "Successfully SignIn with uid: ${it.result?.user?.uid}")
                 showToast("SignIn Successfully!")
 
+
+
 //                after signup intent to sign in form
                 val to_homepage = Intent(this, HomepageActivity::class.java)
 //                this helps us when we go back in our activity it exit from current activity(e.g: user signIn account) and also to clear back stack
                 to_homepage.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(to_homepage)
+
+                onStart()
             }
 
 //                  message for  the unsuccessful SignIn

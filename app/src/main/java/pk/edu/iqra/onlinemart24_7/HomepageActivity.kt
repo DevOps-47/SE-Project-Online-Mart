@@ -3,22 +3,28 @@ package pk.edu.iqra.onlinemart24_7
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_category.*
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.txt_footer_homepage
 import kotlinx.android.synthetic.main.menu_header.*
 
 class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
-    lateinit var drawerLayout:DrawerLayout
-    lateinit var navigationView: NavigationView
-    lateinit var toolbar: androidx.appcompat.widget.Toolbar
+    private lateinit var auth: FirebaseAuth
+    private lateinit var database: FirebaseDatabase
+    private lateinit var ref: DatabaseReference
+    private lateinit var drawerLayout:DrawerLayout
+    private lateinit var navigationView: NavigationView
+    private lateinit var toolbar: androidx.appcompat.widget.Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +38,7 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             showToast("Pixal 4a")
         }
 
-//for toolbar
+//        for toolbar
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -53,8 +59,10 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 //            showToast("Add Image")
 //        }
 
+//        for username
+        auth = Firebase.auth
+        database = Firebase.database
     }
-
 
     //    fun for user logged validation
     private fun User_Logged_Validation(){
@@ -100,7 +108,9 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when(item.itemId){
 
             R.id.cat_Acc -> {
-                showToast("Account Setting in Process")
+                val intent = Intent(this, activity_account_setting::class.java)
+                showToast("Account Setting")
+                startActivity(intent)
             }
         }
 
@@ -132,5 +142,31 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             }
         }
         return true
+    }
+
+
+    //    to display username
+    override fun onStart() {
+        super.onStart()
+        val currentUser = auth.currentUser
+        ref = database.getReference("users")
+        if (currentUser != null) {
+            ref.child(currentUser.uid).addValueEventListener(object: ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val user = snapshot.getValue(Users::class.java)
+                    val username = user?.username
+                        showToast("Welcome ${username}")
+
+//                    to show in navigation menu
+                        main_username.text = "${username}"
+
+//                    to show in homepage footer and categories footer
+                    txt_footer_homepage.text = "${username}"
+                }
+                override fun onCancelled(snapshot: DatabaseError) {
+//                    show error here
+                }
+            })
+        }
     }
 }
