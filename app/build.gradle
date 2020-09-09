@@ -56,7 +56,8 @@ dependencies {
 //    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
 
-//    to fix errors
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
 
 apply plugin: 'com.android.application'

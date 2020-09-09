@@ -27,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".electronic_category_data"/>
         <activity android:name=".aboutUs" />
         <activity android:name=".Cart" />
         <activity android:name=".ItemList" />
